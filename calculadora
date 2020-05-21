@@ -110,6 +110,11 @@ public class Program
 								Console.Write("Obrigado!! tchauuu :)");
 								break;
 							//fim case
+							
+							//caso opcão digitada seja invalida
+							default:
+								Console.WriteLine("Opção invalida!");
+								break;
 						}
 				break;
 				//fim case
@@ -119,11 +124,11 @@ public class Program
 						Console.Write("Obrigado!! tchauuu :)");
 						break;
 				//fim case
+				
+				//caso opcão digitada seja invalida
 				default:
 					Console.WriteLine("Opção invalida!");
 					break;
-					
-				//fim case
 				}
 			
 		
