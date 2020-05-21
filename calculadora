@@ -1,0 +1,132 @@
+// autor: 1DSI3 @Guilherme Ruiz
+// feito em 03/03/2020
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int opcao;				//variavel opção do usuario
+		double v1, v2;			//variaveis de valor
+		
+			//faz leitura da opção do usuario
+			Console.WriteLine("1-Somar\n2-Subtrair\n3-Multiplicar\n4-Dividir\n5-Avançado\n6-Fecha Programa");  
+			opcao = int.Parse(Console.ReadLine());   
+			
+			//Estrutura switch case para opção usuario
+			switch(opcao)
+			{
+				//caso opção for igual 1 pede dois valor que vão ser Somados
+				case 1: 
+					Console.WriteLine("Informe primeiro valor: ");
+					v1 = double.Parse(Console.ReadLine());
+					Console.WriteLine("Informe segundo valor: ");
+					v2 = double.Parse(Console.ReadLine());
+					Console.WriteLine("A soma entre os valores "+v1+" E "+v2+" é igual à: "+(v1+v2));
+					break;
+				//fim case
+					
+				//caso opção for igual 2 pede dois valores que vão ser Subtraidos
+				case 2:
+					Console.WriteLine("Informe primeiro valor: ");
+					v1 = double.Parse(Console.ReadLine());
+					Console.WriteLine("Informe segundo valor: ");
+					v2 = double.Parse(Console.ReadLine());
+					Console.WriteLine("A subtração entre os valores "+v1+" E "+v2+" é igual à: "+(v1-v2));
+					break;
+				//fim case
+					
+				//caso opção for igual 3 pede dois valores que vão ser Multiplicados
+				case 3:
+					Console.WriteLine("Informe primeiro valor: ");
+					v1 = double.Parse(Console.ReadLine());
+					Console.WriteLine("Informe segundo valor: ");
+					v2 = double.Parse(Console.ReadLine());
+					Console.WriteLine("A multiplicação entre os valores "+v1+" E "+v2+" é igual à: "+(v1*v2));
+					break;
+				//fim case
+	
+				//caso opção for igual 4 pede dois valores que vão ser divididos
+				case 4:
+					Console.WriteLine("Informe primeiro valor: ");
+					v1 = double.Parse(Console.ReadLine());
+					Console.WriteLine("Informe segundo valor: ");
+					v2 = double.Parse(Console.ReadLine());
+					Console.WriteLine("A divisão entre os valores "+v1+" E "+v2+" é igual à: "+(v1/v2));
+					break;
+				//fim case
+				
+				//caso opção for igual 5 abre outro menu com outras opções
+				case 5:
+					Console.WriteLine("Opcões avançadas!\n1-Potencia\n2-Raiz Quadradaz\n3-Seno\n4-Cosseno\n5-Tangente\n6-Fecha Programa");
+					opcao = int.Parse(Console.ReadLine());
+						switch(opcao)
+						{
+							//caso opção for igual 1 pede dois valores para potencializar 
+							case 1:
+								Console.WriteLine("Informe um valor para pontecializar: ");
+								v1 = double.Parse(Console.ReadLine());
+								Console.WriteLine("Infome um valor para Potencia: ");
+								v2 = double.Parse(Console.ReadLine());
+								Console.WriteLine("O valor "+v1+"elevado a "+v2+" é igual à: "+Math.Pow(v1, v2));
+								break;
+							//fim case
+								
+							//caso opção for igual 2 pede um valor para raiz quadrada
+							case 2:
+								Console.WriteLine("Informe um valor para ver sua raiz quadrada");
+								v1 = double.Parse(Console.ReadLine());
+								Console.WriteLine("A raiz quadrada do valor "+v1+" é igual à: "+Math.Sqrt(v1));
+								break;
+							//fim case
+							
+							//caso opção for igual 3 pede um valor para mostrar seu seno
+							case 3:
+								Console.WriteLine("Infome um valor para ver seu seno: ");
+								v1 = double.Parse(Console.ReadLine());
+								Console.WriteLine("O seno do valor "+v1+" é igual à"+Math.Sin(v1));
+								break;
+							//fim case
+								
+							//caso opção for igual 4 pede um valor para mostrar seu cosseno
+							case 4:
+								Console.WriteLine("Infome um valor para ver seu seno: ");
+								v1 = double.Parse(Console.ReadLine());
+								Console.WriteLine("O seno do valor "+v1+" é igual à"+Math.Cos(v1));
+								break;
+							//fim case
+							
+							//caso opção for igual 5 pede um valor para mostrar seu tangente
+							case 5:
+								Console.WriteLine("Infome um valor para ver seu seno: ");
+								v1 = double.Parse(Console.ReadLine());
+								Console.WriteLine("O seno do valor "+v1+" é igual à"+Math.Tan(v1));
+								break;
+							//fim case
+							
+							//caso opção for igual 6 fecha programa
+							case 6:
+								Console.Write("Obrigado!! tchauuu :)");
+								break;
+							//fim case
+						}
+				break;
+				//fim case
+					
+				//caso opção for igual 6 fecha programa
+				case 6:
+						Console.Write("Obrigado!! tchauuu :)");
+						break;
+				//fim case
+				default:
+					Console.WriteLine("Opção invalida!");
+					break;
+					
+				//fim case
+				}
+			
+		
+
+	}
+}
